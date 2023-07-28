@@ -74,7 +74,7 @@ const QUERY = `{
 
 
 const requestInfo = async function
-requestInfo(user,  AUTH = "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") {
+requestInfo(user,  AUTH = "") {
     const thisQ = QUERY.replace(/\n/g, ' ').replace('{:USER_LOGIN:}', user);
     const url = 'https://api.github.com/graphql';
     let data;
